@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXSnackbar?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: e0d8d7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="homepage.sales_ctr">
+   <children>
+      <Text fill="#1e1d1d" layoutX="292.0" layoutY="58.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="SALES" wrappingWidth="115.13671875">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="36.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales ID" wrappingWidth="108.13671875">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="35.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coustomer ID">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="42.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="36.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purchase Date">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="sales_id" labelFloat="true" layoutX="229.0" layoutY="111.0" prefHeight="25.0" prefWidth="298.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="16.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="customer_id" layoutX="229.0" layoutY="158.0" prefHeight="25.0" prefWidth="298.0" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="quantity" layoutX="229.0" layoutY="246.0" prefHeight="25.0" prefWidth="298.0" style="-fx-background-color: white;" />
+      <JFXButton fx:id="sales_details_btn" buttonType="RAISED" layoutX="259.0" layoutY="341.0" onAction="#sales_details_btn" prefHeight="45.0" prefWidth="91.0" style="-fx-background-color: white;" text="SUBMIT">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXDatePicker fx:id="date" layoutX="229.0" layoutY="289.0" prefHeight="25.0" prefWidth="298.0" style="-fx-background-color: white;">
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXDatePicker>
+      <JFXSnackbar layoutX="239.0" layoutY="35.0" prefWidth="7.0" />
+      <JFXButton fx:id="sales_add_back_btn" layoutX="56.0" layoutY="33.0" onAction="#sales_add_back_btn" text=" ">
+         <graphic>
+            <FontAwesomeIconView fx:id="supplier_add_back" glyphName="ARROW_CIRCLE_LEFT" size="25" />
+         </graphic>
+      </JFXButton>
+      <JFXTextField fx:id="product_id" layoutX="229.0" layoutY="204.0" prefHeight="25.0" prefWidth="298.0" style="-fx-background-color: white;" />
+      <Text layoutX="33.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product ID">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

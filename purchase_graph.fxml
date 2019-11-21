@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="homepage.purchase_graph_ctr">
+   <children>
+      <LineChart fx:id="purchase_line_graph" animated="false" layoutX="53.0" layoutY="38.0" prefHeight="454.0" prefWidth="500.0" title="Purchase and Sales Details ">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="x" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <JFXButton fx:id="purchase_graph_bck" layoutX="27.0" layoutY="26.0" onAction="#purchase_graph_bck" prefHeight="25.0" prefWidth="29.0" text=" ">
+         <graphic>
+            <FontAwesomeIconView glyphName="ARROW_CIRCLE_LEFT" size="25" />
+         </graphic>
+      </JFXButton>
+      <Label contentDisplay="RIGHT" layoutX="33.0" layoutY="237.0" prefHeight="25.0" prefWidth="45.0" rotate="270.0" text="in ">
+         <graphic>
+            <FontAwesomeIconView glyphName="RUPEE" size="15" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: e0d8d7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="homepage.supplier_table">
+   <children>
+      <MenuBar layoutX="141.0" prefHeight="38.0" prefWidth="180.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="141.0" AnchorPane.rightAnchor="478.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="152.0" prefHeight="38.0" prefWidth="592.0" style="-fx-background-color: white;" text="                                                                                  SUPPLIER DETAILS" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="100.0" pickOnBounds="true" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@label.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="supplier_table" editable="true" layoutX="14.0" layoutY="81.0" prefHeight="380.0" prefWidth="641.0">
+        <columns>
+          <TableColumn fx:id="supplier_id_col" prefWidth="94.0" text="supplier id" />
+          <TableColumn fx:id="supplier_name_col" onEditCommit="#oneditname" prefWidth="106.0" text="supplier name" />
+            <TableColumn fx:id="supplier_cnumber_col" prefWidth="106.0" text="contact number" />
+            <TableColumn fx:id="supplier_address_col" prefWidth="106.0" text="address" />
+            <TableColumn fx:id="supplier_accnumber_col" prefWidth="106.0" text="account number" />
+            <TableColumn fx:id="supplier_gstin_col" prefWidth="120.0" text="GSTIN" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="add_supplier" buttonType="RAISED" layoutX="698.0" layoutY="179.0" onAction="#add_supplier" style="-fx-background-color: white;" text="ADD">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="PLUS" size="16" />
+         </graphic></JFXButton>
+      <JFXButton fx:id="supplier_back_btn" layoutX="35.0" layoutY="7.0" onAction="#supplier_bck_act" text="  " />
+       <JFXButton fx:id="supplier_delete" buttonType="RAISED" layoutX="694.0" layoutY="281.0" onAction="#supplier_delete" style="-fx-background-color: white;" text="Delete">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="TRASH" size="18" />
+         </graphic></JFXButton>
+      <JFXButton fx:id="supplier_back_btn1" layoutX="34.0" layoutY="7.0" onAction="#supplier_bck_act" text="  ">
+         <graphic>
+            <FontAwesomeIconView fx:id="supplier_back1" glyphName="ARROW_CIRCLE_LEFT" size="25" text="" />
+         </graphic>
+      </JFXButton>
+
+   </children>
+</AnchorPane>

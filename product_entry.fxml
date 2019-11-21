@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="unit" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="700.0" style="-fx-background-color: d7ded7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="homepage.productentryctr">
+   <children>
+      <Text fill="#170303" layoutX="256.0" layoutY="54.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Entry" wrappingWidth="252.13671875">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="41.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product ID" wrappingWidth="108.13671875">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="39.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Name">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="43.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unit">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="37.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price/unit">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="44.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="39.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="product_id" layoutX="215.0" layoutY="81.0" prefHeight="25.0" prefWidth="312.0" style="-fx-background-color: white;" unFocusColor="#686a6f" />
+      <JFXTextField fx:id="product_name" layoutX="214.0" layoutY="126.0" prefHeight="31.0" prefWidth="312.0" style="-fx-background-color: white;" />
+      <ChoiceBox fx:id="choice_box" layoutX="212.0" layoutY="176.0" prefHeight="31.0" prefWidth="312.0" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="selling_price" layoutX="212.0" layoutY="219.0" prefHeight="25.0" prefWidth="312.0" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="stock" layoutX="215.0" layoutY="264.0" prefHeight="25.0" prefWidth="312.0" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="description" layoutX="215.0" layoutY="323.0" prefHeight="25.0" prefWidth="312.0" style="-fx-background-color: white;" />
+      <JFXButton fx:id="product_entry_btn" alignment="CENTER" buttonType="RAISED" layoutX="320.0" layoutY="394.0" onAction="#product_entry_btn" prefHeight="33.0" prefWidth="95.0" style="-fx-background-color: white;" text="SUBMIT">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="product_entryback" layoutX="50.0" layoutY="41.0" onAction="#product_entryback" text="  ">
+         <graphic>
+            <FontAwesomeIconView glyphName="ARROW_LEFT" size="30" />
+         </graphic></JFXButton>
+   </children>
+</AnchorPane>

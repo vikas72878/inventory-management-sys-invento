@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="781.0" style="-fx-background-color: e0d8d7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="homepage.Controller">
+   <children>
+      <Label alignment="CENTER" graphicTextGap="0.0" layoutX="152.0" prefHeight="38.0" prefWidth="592.0" style="-fx-background-color: #F2F3F7;" text="                                                  INVENTO" textAlignment="CENTER" textFill="#02000d" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="100.0" pickOnBounds="true" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@label.png" />
+         </image>
+      </ImageView>
+      <JFXDrawer fx:id="drawer" layoutY="40.0" prefHeight="461.0" prefWidth="231.0">
+         <children>
+            <VBox fx:id="vbox" prefHeight="316.0" prefWidth="112.0">
+               <children>
+                  <JFXButton fx:id="product_entry1" buttonType="RAISED" graphicTextGap="0.0" onAction="#product_entry" prefHeight="40.0" prefWidth="262.0" style="-fx-background-color: #00496A;" text="     Product Entry" textFill="#f3f2f8">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="10.0" right="3.0" top="20.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="SEND" size="20" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets right="2.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="customer_details" buttonType="RAISED" graphicTextGap="0.0" onAction="#customer_details" prefHeight="40.0" prefWidth="266.0" style="-fx-background-color: #00496A;" text="           Customers" textFill="#f3f2f8">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="10.0" right="3.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="USER" size="20" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets right="2.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="supplier_details" buttonType="RAISED" graphicTextGap="0.0" onAction="#supplier_details" prefHeight="40.0" prefWidth="267.0" style="-fx-background-color: #00496A;" text="               Suppliers" textFill="#f3f2f8">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="10.0" right="3.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="TRUCK" size="20" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets right="2.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="barcode" buttonType="RAISED" graphicTextGap="0.0" onAction="#barcode" prefHeight="40.0" prefWidth="267.0" style="-fx-background-color: #00496A;" text="      generate bar codes" textFill="#f3f2f8">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="BARCODE" size="20" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="12.0" right="3.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets right="2.0" />
+                     </padding></JFXButton>
+                  <JFXButton fx:id="purchase_details" buttonType="RAISED" graphicTextGap="0.0" onAction="#purchase_details" prefHeight="38.0" prefWidth="266.0" style="-fx-background-color: #00496A;" text="      Purchases" textFill="#f3f2f8">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="10.0" right="3.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CART_PLUS" size="20" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets right="2.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="purchase_graph_btn" buttonType="RAISED" graphicTextGap="0.0" onAction="#purchase_graph_btn" prefHeight="41.0" prefWidth="269.0" style="-fx-background-color: #00496A;" text="      Report" textFill="#f3f2f8">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="10.0" right="3.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="BAR_CHART" size="20" />
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets right="2.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="sales_table_btn" buttonType="RAISED" graphicTextGap="0.0" onAction="#sales_table_btn" prefHeight="40.0" prefWidth="265.0" style="-fx-background-color: #00496A;" text="           Sales" textFill="#f3f2f8">
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" right="2.0" />
+                     </padding>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="RUPEE" size="20" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </JFXDrawer>
+      <JFXHamburger fx:id="hamburger" layoutX="20.0" layoutY="14.0" prefHeight="16.0" prefWidth="23.0" />
+      <ImageView fitHeight="398.0" fitWidth="469.0" layoutX="251.0" layoutY="61.0" pickOnBounds="true">
+         <image>
+            <Image url="@gvfcdxs.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="logout_btn" layoutX="686.0" layoutY="5.0" onAction="#logout_btn" text="LOGOUT">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <MaterialDesignIconView glyphName="POWER" size="20" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

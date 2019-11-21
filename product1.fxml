@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: e0d8d7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="homepage.product1ctr">
+   <children>
+      <MenuBar layoutX="141.0" prefHeight="38.0" prefWidth="180.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="141.0" AnchorPane.rightAnchor="478.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="152.0" prefHeight="38.0" prefWidth="650.0" style="-fx-background-color: white;" text="                                                                   PRODUCTS" textAlignment="CENTER" wrapText="true" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="100.0" pickOnBounds="true" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@label.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="18.0" layoutY="100.0" prefHeight="380.0" prefWidth="609.0">
+        <columns>
+          <TableColumn fx:id="product_id_col" prefWidth="94.0" text="product id" />
+          <TableColumn fx:id="product_name_col" prefWidth="106.0" text="product name" />
+            <TableColumn fx:id="product_unit_col" prefWidth="88.0" text="unit" />
+            <TableColumn fx:id="product_sellingp_col" prefWidth="123.0" text="price/unit" />
+            <TableColumn fx:id="product_stock_col" prefWidth="121.0" text="stock" />
+            <TableColumn fx:id="product_remarks_col" prefWidth="88.0" text="remarks" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="add_product" buttonType="RAISED" layoutX="686.0" layoutY="219.0" onAction="#product_entry1" style="-fx-background-color: white;" text="  ADD">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="PLUS" size="16" />
+         </graphic></JFXButton>
+      <JFXButton fx:id="product_delete" buttonType="RAISED" layoutX="681.0" layoutY="360.0" onAction="#product_delete" style="-fx-background-color: white;" text="DELETE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="TRASH" size="18" />
+         </graphic>
+      </JFXButton>
+      <AnchorPane prefHeight="38.0" prefWidth="101.0" style="-fx-background-color: white;">
+         <children>
+            <JFXButton fx:id="product1back" layoutX="39.0" layoutY="-1.0" onAction="#product1back" prefHeight="38.0" prefWidth="41.0" text=" ">
+               <graphic>
+                  <FontAwesomeIconView glyphName="ARROW_CIRCLE_LEFT" size="30" wrappingWidth="28.28571319580078" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

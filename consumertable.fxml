@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: e0d8d7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="homepage.consumer_table">
+   <children>
+      <MenuBar layoutX="141.0" prefHeight="38.0" prefWidth="180.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="141.0" AnchorPane.rightAnchor="478.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="152.0" prefHeight="38.0" prefWidth="592.0" style="-fx-background-color: #C7C7C7;" text="                                                                                            CONSUMER DETAILS" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="12.0" pickOnBounds="true" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@label.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="consumer_table" editable="true" layoutX="14.0" layoutY="69.0" prefHeight="380.0" prefWidth="641.0">
+        <columns>
+          <TableColumn fx:id="consumer_id_col" prefWidth="94.0" text="Consumer id" />
+          <TableColumn fx:id="consumer_name_col" prefWidth="106.0" text="Consumer name" />
+            <TableColumn fx:id="consumer_cnumber_col" prefWidth="106.0" text="Contact number" />
+            <TableColumn fx:id="consumer_address_col" prefWidth="106.0" text="Address" />
+            <TableColumn fx:id="consumer_accnumber_col" prefWidth="106.0" text="Account number" />
+            <TableColumn fx:id="consumer_gstin_col" prefWidth="120.0" text="GSTIN" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="add_consumer" buttonType="RAISED" layoutX="707.0" layoutY="182.0" onAction="#add_consumer" style="-fx-background-color: WHITE;" text="ADD">
+         <font>
+            <Font name="Sylfaen" size="15.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="PLUS" size="16" />
+         </graphic></JFXButton>
+      <JFXButton fx:id="consumer_back_btn" layoutX="79.0" onAction="#consumer_bck_act" text="  ">
+         <graphic>
+            <FontAwesomeIconView fx:id="consumer_back" glyphName="ARROW_CIRCLE_LEFT" size="30" />
+         </graphic></JFXButton>
+
+       <JFXButton fx:id="consumer_delete" buttonType="RAISED" layoutX="703.0" layoutY="266.0" onAction="#consumer_delete" style="-fx-background-color: WHITE;" text="DELETE">
+         <font>
+            <Font name="Sylfaen" size="15.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="TRASH" size="18" />
+         </graphic></JFXButton>
+
+   </children>
+</AnchorPane>
